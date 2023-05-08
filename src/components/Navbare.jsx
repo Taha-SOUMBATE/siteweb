@@ -31,14 +31,14 @@ const Dropdown = ({ options }) => {
         </svg>
       </button>
       {isOpen && (
-        <ul className="absolute z-10    rounded shadow my-1 w-28">
+        <ul className="absolute z-10  lg:w-40  rounded-lg  shadow my-1 ">
           {options.map((option) => (
             <li
               key={option.value}
-              className="px-4 py-2 bg-white max-[492px]:w-[100vw]  hover:bg-gray-100 cursor-pointer"
+              className="px-4 py-2 bg-white max-[492px]:w-[100vw] md:w-[27vw]  hover:bg-gray-100  cursor-pointer"
               onClick={() => handleOptionClick(option)}
             >
-              <a className="text-gray-700  hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">
+              <a className="text-gray-700  hover:bg-gray-50 border-b  border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">
                 {option.titel}{" "}
               </a>
             </li>
@@ -50,39 +50,49 @@ const Dropdown = ({ options }) => {
 };
 
 const options1 = [
-  { label: "Formations", value: "1", titel: "first" },
-  { label: "Option 1.2", value: "2", titel: "first" },
-  { label: "Option 1.3", value: "3", titel: "first" },
+  { label: "Formations", value: "1", titel: "Développeur Débutant" },
+  { label: "Option 1.2", value: "2", titel: "Développeur Confirmé" },
+  { label: "Option 1.3", value: "3", titel: "Développeur Expert" },
+  { label: "Option 1.3", value: "4", titel: "Formations conventionnées" },
 ];
 
 const options2 = [
-  { label: "Métiers", value: "1" },
-  { label: "Option 2.2", value: "2" },
-  { label: "Option 2.3", value: "3" },
+  { label: "Métiers", value: "1", titel: "Junior",url:"" },
+  { label: "Option 2.2", value: "2", titel: "Confirmé",url:"" },
+  { label: "Option 2.3", value: "3", titel: "Expert",url:"" },
 ];
 
 const options3 = [
-  { label: "Technologies", value: "1" },
-  { label: "Option 2.2", value: "2" },
-  { label: "Option 2.3", value: "3" },
-];
+    { label: "Technologies", value: "1", titel: "Langages",url:"" },
+    { label: "Option 2.2", value: "2", titel: "Frameworks et plateformes",url:"" },
+    { label: "Option 2.3", value: "3", titel: "Librairies",url:"" },
+    { label: "Option 2.3", value: "4", titel: "Outils",url:"" },
+  ];
 
 const options4 = [
-  { label: "Entreprise", value: "1" },
-  { label: "Option 2.2", value: "2" },
-  { label: "Option 2.3", value: "3" },
-];
-const options5 = [
-    { label: "Notre Academy", value: "1" },
-    { label: "Option 2.2", value: "2" },
-    { label: "Option 2.3", value: "3" },
+    { label: "Entreprise", value: "1", titel: "Recruter un(e) alternant(e)",url:"" },
+    { label: "Option 2.2", value: "2", titel: "Publier une offre d'emploi",url:"" },
+    
   ];
+  
+ 
+  const options5 = [
+    { label: "Notre Academy", value: "1", titel: "Nous rencontrer",url:"" },
+    { label: "Option 2.2", value: "2", titel: "Nos engagements",url:"" },
+    { label: "Option 2.3", value: "3", titel: "Financements",url:"" },
+    { label: "Option 2.3", value: "4", titel: "OPCO et entreprises",url:"" },
+    { label: "Option 2.3", value: "5", titel: "Reconnaissances professionnelles",url:"" },
+    { label: "Option 2.3", value: "6", titel: "Espace presse",url:"" },
+  ];
+  
 
   const options6 = [
-    { label: "Villes", value: "1" },
-    { label: "Option 2.2", value: "2" },
-    { label: "Option 2.3", value: "3" },
+    { label: "Villes", value: "1", titel: "Villes & Campus",url:"" },
+    { label: "Option 2.2", value: "2", titel: "",url:"" },
+    { label: "Option 2.3", value: "3", titel: "",url:"" },
   ];
+  
+
 
 
 
