@@ -1,4 +1,63 @@
 import React from 'react';
+import { useState } from 'react';
+
+const Dropdown = ({ options }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(options[0]);
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  };
+
+  return (
+    <div className="relative">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="bg-gray-200 text-gray-700 font-medium py-2 px-4 rounded inline-flex items-center"
+      >
+        {selectedOption.label}{' '}
+        <svg
+          className="w-4 h-4 ml-1"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fillRule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clipRule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      {isOpen && (
+        <ul className="absolute z-10 left-0 mt-2 py-2 w-full bg-white shadow-lg rounded">
+          {options.map((option) => (
+            <li
+              key={option.value}
+              className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              onClick={() => handleOptionClick(option)}
+            >
+              <a className='text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0'>{option.label} </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
+
+const options1 = [
+  { label: 'Option 1.1', value: 'option1.1' },
+  { label: 'Option 1.2', value: 'option1.2' },
+  { label: 'Option 1.3', value: 'option1.3' },
+];
+
+const options2 = [
+  { label: 'Option 2.1', value: 'option2.1' },
+  { label: 'Option 2.2', value: 'option2.2' },
+  { label: 'Option 2.3', value: 'option2.3' },
+];
 
 const Navbare = () => {
     return (
@@ -49,8 +108,7 @@ const Navbare = () => {
             <a href="#" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">Pricing</a>
             </li>
             <li>
-            <a href="#" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">Contact</a>
-            </li>
+            <Dropdown options={options2} />            </li>
         </ul>
         </div>
     </div>
