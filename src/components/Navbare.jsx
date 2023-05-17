@@ -195,14 +195,7 @@ const Navbare = () => {
           </div>
         </nav>
 
-        <p class="mt-5">
-          This dropdown navbar element is part of a larger, open-source library
-          of Tailwind CSS components. Learn more by going to the official{" "}
-          <a class="text-blue-600 hover:underline" href="#" target="_blank">
-            Flowbite Documentation
-          </a>
-          .
-        </p>
+       
       </div>
 
       <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
