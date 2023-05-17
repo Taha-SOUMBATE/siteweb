@@ -68,20 +68,20 @@ const Page = () => {
                 <p className='text-lg md:w-[80vw] lg:w-[55vw] mx-auto  text-center   p-1 rounded-lg'>Dès la fin de la formation, notre équipe Carrières vous accompagnera dans votre recherche d'emploi pour trouver le job de vos rêves.</p>
             </section>
 
-            <section className=''>
+            <section className='my-5'>
                 <h2 className='text-2xl text-orange-400 hover:text-orange-100 bg-orange-100 hover:bg-orange-400 md:w-[80vw] lg:w-[80vw] mx-auto  text-center   p-1 rounded-lg'>Nos bootcamps immersifs en Web </h2>
                 <p>Des programmes qui ont aidé des milliers d'étudiants à se lancer dans de nouvelles carrières dans l'industrie tech.</p>
 
-                <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-4">
+                <div className="grid lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-4">
 
                     {
                         card.map((cards) => (
                             <div class="card " key={cards.id}>
                                 <img src={cards.img} class="card-img-top" alt="..." />
-                                <div class="card-body lg:h-[20vh] md:h-[25vh] flex flex-col justify-between ">
+                                <div class="card-body lg:h-[38vh] xl:h-[20vh] md:h-[25vh] flex flex-col justify-between ">
                                     <h5 class="card-title text-lg">{cards.title}</h5>
                                     <p class="card-text text-sm">{cards.dsck}</p>
-                                    <a href="#" class="btn btn-primary">{cards.btne}</a>
+                                    <a href="#" class="bg-blue-400 p-1 text-center no-underline text-white rounded-lg dec">{cards.btne}</a>
                                 </div>
                             </div>
                         ))
@@ -90,7 +90,7 @@ const Page = () => {
 
 
             </section>
-            <section className=''>
+            <section className='my-5 hidden'>
                 <h2 className='text-2xl text-orange-400 hover:text-orange-100 bg-orange-100 hover:bg-orange-400 md:w-[80vw] lg:w-[78vw] mx-auto  text-center   p-1 rounded-lg'>Pourquoi notre méthodologie est efficace ?</h2>
                 <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 ">
                     {
@@ -109,7 +109,7 @@ const Page = () => {
                     }
                 </div>
             </section>
-            <section className=''>
+            <section className='hidden'>
                 <h2 className='lg:text-2xl md:text-lg text-base  text-orange-400 hover:text-orange-100 bg-orange-100 hover:bg-orange-400 md:w-[80vw] lg:w-[78vw] mx-auto  text-center   p-1 rounded-lg'>Des formations diplômantes faites par des experts plus que passionnés
                     pour vous mener au succès professionnel.</h2>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-4">
@@ -132,7 +132,7 @@ const Page = () => {
                 </div>
             </section>
 
-            <section class="bg-white dark:bg-gray-900">
+            <section class="bg-white hidden dark:bg-gray-900">
                 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
                     <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
