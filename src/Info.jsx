@@ -44,18 +44,25 @@ export const card=[
 export const parcour=[
     {
         id:1,
-        nom:"Développeur web Junior",
-        time:"4 mois",
+        icone:"",
+        nom:"Accompagnement personnalisé",
+        time:"Chaque étudiant sera accompagné par un instructeur de haut niveau. Nous croyons fermement qu'une formation efficace passe par une assistance humaine.",
     },
     {
-        id:1,
-        nom:"Développeur Jeux vidéo Unity 3D",
-        time:"3 mois",
+        id:2,
+        icone:"",
+        nom:"Un parcours orienté projets",
+        time:"En plus de contenir un projet final, chaque parcours contient plusieurs projets et exercices pratiques pour donner la possibilité à l'étudiant de tester et construire par lui même.",
     },
     {
-        id:1,
-        nom:"Intégrateur Développeur Web",
-        time:"16 mois",
+        id:3,
+        nom:"La communauté GOMYCODE",
+        time:"En rejoignant GOMYCODE vous aurez accès au support de toute une communauté passionnée par le numérique pour vous motiver au quotidien. Nous organisons aussi différents événements: hackathons, talks, panels… pour notre communauté.",
+    },
+    {
+        id:3,
+        nom:"Un contenu riche et interactif",
+        time:"Le contenu de nos parcours est élaboré avec les entreprises partenaires de GOMYCODE. Il est orienté employabilité et il est constamment mis à jour selon les demandes des recruteurs.",
     },
 ];
 export const dipliom=[
@@ -95,4 +102,28 @@ export const dipliom=[
         titel:"Spécialisez vous davantage",
         text:"avec des programmes pour tous niveaux"
     },   
-]
+];
+
+export const slides = [
+    [
+        'https://dummyimage.com/200/300/fff',
+        'https://dummyimage.com/300/300/fff',
+        'https://dummyimage.com/300/300/fff',
+        'https://dummyimage.com/200/300/fff',
+      
+    ],
+    [
+      'https://dummyimage.com/200/300/fff',
+      'https://dummyimage.com/300/300/fff',
+      'https://dummyimage.com/300/300/fff',
+      'https://dummyimage.com/200/300/fff',
+    
+    ],
+    [
+      'https://dummyimage.com/100/300/fff',
+      'https://dummyimage.com/300/300/fff',
+      'https://dummyimage.com/300/300/fff',
+      'https://dummyimage.com/200/300/fff',
+ 
+    ],
+  ];
