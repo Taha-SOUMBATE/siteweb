@@ -64,8 +64,8 @@ const Page = () => {
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
-                <h2 className='text-2xl'>Rejoignez les meilleures entreprises tech</h2>
-                <p className=''>Dès la fin de la formation, notre équipe Carrières vous accompagnera dans votre recherche d'emploi pour trouver le job de vos rêves.</p>
+                <h2 className='text-2xl text-orange-400 hover:text-orange-100 bg-orange-100 hover:bg-orange-400 md:w-[80vw] lg:w-[50vw] mx-auto  text-center   p-1 rounded-lg'>Rejoignez les meilleures entreprises tech</h2>
+                <p className='text-lg md:w-[80vw] lg:w-[55vw] mx-auto  text-center   p-1 rounded-lg'>Dès la fin de la formation, notre équipe Carrières vous accompagnera dans votre recherche d'emploi pour trouver le job de vos rêves.</p>
             </section>
 
             <section className='hidden'>
