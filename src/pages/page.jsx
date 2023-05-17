@@ -10,8 +10,8 @@ const Page = () => {
     return (
         <div className='w-[70vw]  mx-auto font-bold'>
 
-            <section className='my-5'>
-                <div className="justify-between md:flex md:flex-row text-xl">
+            <section className='my-5 section1'>
+                <div className="justify-between flex flex-row text-xl">
                     <div className='w-[34vw] md:w-auto text-start'>
                         <h2>Accélérez votre carrière, formez-vous aux<br /></h2>
                         <h2 className='text-orange-400 hover:text-orange-100 bg-orange-100 hover:bg-orange-400 w-[15vw] md:w-auto p-1 rounded-lg'>métiers de la Tech</h2>
