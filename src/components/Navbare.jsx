@@ -99,10 +99,10 @@ const options4 = [
 const Navbare = () => {
   return (
     <>
-      <div class="max-w-9xl mx-auto ">
+      <div class=" mx-auto ">
         <nav class="border-gray-200">
-          <div class="container mx-auto flex flex-wrap items-center justify-between">
-            <a href="#" class="flex">
+          <div class=" mx-auto flex flex-wrap items-center justify-around lg:justify-evenly">
+            <a href="#" class="flex ">
               <svg
                 class="h-10 mr-3"
                 width="51"
