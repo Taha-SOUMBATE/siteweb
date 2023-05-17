@@ -120,7 +120,7 @@ const Page = () => {
                             <div className=" mb-3">
                                 <div class="card " key={diplioms.id}>
                                     <img src={diplioms.img} class="card-img-top h-[20vh]" alt="..." />
-                                    <div class="card-body  lg:h-[15vh] md:h-[16vh]">
+                                    <div class="card-body h-[20vh]  lg:h-[15vh] md:h-[16vh]">
                                         <h4 class="card-title text-xl font-bold">{diplioms.titel}</h4>
                                         <p class="card-text">{diplioms.text}</p>
                                     </div>
