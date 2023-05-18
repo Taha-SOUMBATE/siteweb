@@ -97,7 +97,7 @@ const Page = () => {
                         parcour.map((parcours) => (
                             <div className="  mb-3">
                                 <div class="card " key={parcours.id}>
-                                    <div class="card-body md:h-[33vh] lg:h-[35vh] xl:h-[30vh] h-[20vh] flex flex-col justify-between">
+                                    <div class="card-body md:h-[33vh] lg:h-[35vh] xl:h-[35vh] h-[20vh] flex flex-col justify-between">
                                         <h5 class="card-title md:text-lg lg:text-lg">{parcours.nom}</h5>
                                         <p class="card-text">Durée {parcours.time}</p>
 
