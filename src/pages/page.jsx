@@ -17,7 +17,7 @@ const Page = () => {
                         <h2 className='text-xl'>Accélérez votre carrière, formez-vous aux<br /></h2>
                         <h2 className="text-orange-400 hover:text-orange-100 bg-orange-100 hover:bg-orange-400 md:w-[34vw] lg:w-[25.1vw] xl:w-[21.1vw] sm:w-[36vw] p-1 rounded-lg">métiers de la Tech</h2>
                         <p className="text-base">Accédez à de nouvelles opportunités grâce à nos formations immersives en développement web et en data.</p>
-                        <Link href={'/'} className="rounded-md no-underline bg-orange-400 p-1 text-white">no formation</Link>
+                        <Link href={'#form'} className="rounded-md no-underline bg-orange-400 p-1 text-white">no formation</Link>
                     </div>
                     <div id="carouselExampleRide" className="carousel slide w-[40vw]  md:w-[25vw] " data-bs-ride="true">
                         <div className="carousel-inner">
@@ -70,7 +70,7 @@ const Page = () => {
             </section>
 
             <section className='my-5'>
-                <h2 className='text-2xl text-orange-400 hover:text-orange-100 bg-orange-100 hover:bg-orange-400 md:w-[80vw] lg:w-[80vw] xl:w-[85vw] mx-auto  text-center   p-1 rounded-lg'>Nos formation </h2>
+                <h2 id='form' className='text-2xl text-orange-400 hover:text-orange-100 bg-orange-100 hover:bg-orange-400 md:w-[80vw] lg:w-[80vw] xl:w-[85vw] mx-auto  text-center   p-1 rounded-lg'>Nos formation </h2>
                 <p>Des programmes qui ont aidé des milliers d'étudiants à se lancer dans de nouvelles carrières dans l'industrie tech.</p>
 
                 <div className="grid lg:grid-cols-2 xl:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-4">
@@ -82,7 +82,7 @@ const Page = () => {
                                 <div class="card-body lg:h-[37vh] xl:h-[29vh] md:h-[25vh] flex flex-col justify-between ">
                                     <h5 class="card-title text-lg">{cards.title}</h5>
                                     <p class="card-text text-sm">{cards.dsck}</p>
-                                    <Link href={'/'} class="bg-orange-300 p-1 text-center no-underline text-white rounded-lg dec">{cards.btne}</Link>
+                                    <a href={cards.lin} class="bg-orange-300 p-1 text-center no-underline text-white rounded-lg dec">{cards.btne}</a>
                                 </div>
                             </div>
                         ))
@@ -91,7 +91,7 @@ const Page = () => {
                    
                 </div>
 
-                <Link href={'/'} class="bg-orange-300 p-1 block mx-auto xl:w-[8vw] lg:w-[9vw] md:w-[13vw] w-[14vw]   my-4 text-center no-underline text-white rounded-lg dec">seee more</Link>
+                <Link href={'./formation'} class="bg-orange-300 p-1 block mx-auto xl:w-[8vw] lg:w-[9vw] md:w-[13vw] w-[14vw]   my-4 text-center no-underline text-white rounded-lg dec">seee more</Link>
 
 
             </section>

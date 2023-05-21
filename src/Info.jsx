@@ -1,3 +1,5 @@
+import Developweb from "./pages/developweb";
+
 export const photo= [
     {
         id:1,
@@ -10,6 +12,8 @@ export const photo= [
     
     }
 ];
+
+
 export const card=[
     {
         id:1,
@@ -17,6 +21,7 @@ export const card=[
         title:"Développeur Débutant",
         dsck:"Acquérir les 5 langages et technologies pour devenir développeur web",
         btne:"Développeur Débutant",
+        lin:"./pages/developweb"
     },
     
     {
@@ -129,3 +134,12 @@ export const slides = [
  
     ],
   ];
+
+  export const coure =[
+    {
+        titre:"python",
+        dure:"3 mois",
+        disc:"good cors",
+        img:"https://dummyimage.com/300/300/fff"
+    }
+  ]
