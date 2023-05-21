@@ -41,14 +41,14 @@ const Page = () => {
 
 
             <section>
-                <h2 className="text-center text-orange-400 hover:text-orange-100 bg-orange-100 hover:bg-orange-400 lg:w-[52.3vw] md:w-[62.3vw] w-[87vw] mx-auto  p-1 rounded-lg">Partenaires recruteurs</h2>
-                <div id="carouselExampleAutoplaying" className="carousel slide flex xl:w-[90vw]  lg:w-[73vw]" data-bs-ride="carousel">
+                <h2 className="text-center text-orange-400 hover:text-orange-100 bg-orange-100 hover:bg-orange-400 lg:w-[52.3vw] md:w-[78vw] w-[87vw] mx-auto  p-1 rounded-lg">Partenaires recruteurs</h2>
+                <div id="carouselExampleAutoplaying" className="carousel slide flex xl:w-[90vw]  lg:w-[78vw] mx-auto" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         {slides.map((slide, index) => (
                             <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                                 <div className="flex flex-wrap justify-center">
                                     {slide.map((imgSrc, imgIndex) => (
-                                        <div key={imgIndex} className=" lg:w-[10vw] xl:w-[20vw]  md:mx-8 md:w-[15vw] mx-7  my-3 w-[20vw]">
+                                        <div key={imgIndex} className=" lg:w-[17vw] xl:w-[20vw]  md:mx-7 md:w-[21vw] mx-7  my-3 w-[20vw]">
                                             <img src={imgSrc} className="mx-auto w-full" alt="..." />
                                         </div>
                                     ))}
