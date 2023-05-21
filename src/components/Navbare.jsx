@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { useState } from "react";
 
@@ -38,9 +39,9 @@ const Dropdown = ({ options }) => {
               className="px-4 py-2 bg-white max-[492px]:w-[100vw] md:w-[27vw]  hover:bg-gray-100  cursor-pointer"
               onClick={() => handleOptionClick(option)}
             >
-              <a className="text-gray-700  hover:bg-gray-50 border-b  border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">
+              <Link href={'/'} className="text-gray-700  hover:bg-gray-50 border-b  border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">
                 {option.titel}{" "}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -99,10 +100,10 @@ const options4 = [
 const Navbare = () => {
   return (
     <>
-      <div class=" mx-auto ">
+      <div class=" mx-auto xl:w-[80vw]">
         <nav class="border-gray-200">
-          <div class=" mx-auto flex flex-wrap items-center justify-around lg:justify-evenly">
-            <a href="#" class="flex ">
+          <div class="  flex flex-wrap items-center justify-around xl:justify-between sm:justify-between px-2 lg:justify-evenly">
+            <Link  href={'/'} class="flex ">
               <svg
                 class="h-10 mr-3"
                 width="51"
@@ -134,7 +135,7 @@ const Navbare = () => {
               <span class="self-center text-lg lg:text-xl font-semibold whitespace-nowrap">
                 FlowBite
               </span>
-            </a>
+            </Link>
             <button
               data-collapse-toggle="mobile-menu"
               type="button"

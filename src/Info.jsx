@@ -18,6 +18,7 @@ export const card=[
         dsck:"Acquérir les 5 langages et technologies pour devenir développeur web",
         btne:"Développeur Débutant",
     },
+    
     {
         id:2,
         img:"https://dummyimage.com/300/300/fff",
@@ -39,6 +40,7 @@ export const card=[
         dsck:"Devenir développeur web : formation intensive conventionnée en France",
         btne:"Formations conventionnées",
     },
+    
     
 ];
 export const parcour=[

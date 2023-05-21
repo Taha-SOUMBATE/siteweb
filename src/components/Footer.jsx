@@ -15,21 +15,21 @@ export default function Footer() {
     <MDBFooter className='text-center' color='white' bgColor='dark'>
       <MDBContainer className='p-4'>
         <section className='mb-4'>
-          <MDBBtn outline color="light" floating className='' href='#!' role='button'>
+          <MDBBtn outline color="light" floating className='' href={'/'} role='button'>
 
-            <Link href='https://icons.getbootstrap.com/icons/facebook/'><MDBIcon fab icon='bi bi-facebook' /></Link>
+            <Link href={'https://icons.getbootstrap.com/icons/facebook/'}><MDBIcon fab icon='bi bi-facebook' /></Link>
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-          <Link href='https://icons.getbootstrap.com/icons/facebook/'><MDBIcon fab icon='bi bi-instagram' /></Link>
+          <MDBBtn outline color="light" floating className='m-1' href={'/'} role='button'>
+          <Link href={'https://icons.getbootstrap.com/icons/facebook/'}><MDBIcon fab icon='bi bi-instagram' /></Link>
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-          <Link href='https://icons.getbootstrap.com/icons/facebook/'><MDBIcon fab icon='bi bi-linkedin' /></Link>
+          <MDBBtn outline color="light" floating className='m-1' href={'/'} role='button'>
+          <Link href={'https://icons.getbootstrap.com/icons/facebook/'}><MDBIcon fab icon='bi bi-linkedin' /></Link>
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-          <Link href='https://icons.getbootstrap.com/icons/facebook/'><MDBIcon fab icon='bi bi-github' /></Link>
+          <MDBBtn outline color="light" floating className='m-1' href={'/'} role='button'>
+          <Link href={'https://icons.getbootstrap.com/icons/facebook/'}><MDBIcon fab icon='bi bi-github' /></Link>
           </MDBBtn>
 
         </section>
@@ -51,24 +51,24 @@ export default function Footer() {
 
               <ul className='list-unstyled mb-0'>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 1
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 2
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 3
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 4
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </MDBCol>
@@ -78,24 +78,24 @@ export default function Footer() {
 
               <ul className='list-unstyled mb-0'>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 1
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 2
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 3
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 4
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </MDBCol>
@@ -105,24 +105,24 @@ export default function Footer() {
 
               <ul className='list-unstyled mb-0'>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 1
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 2
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 3
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 4
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </MDBCol>
@@ -132,24 +132,24 @@ export default function Footer() {
 
               <ul className='list-unstyled mb-0'>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 1
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 2
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 3
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
+                  <Link href={'/'} className='text-white'>
                     Link 4
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </MDBCol>
@@ -159,9 +159,9 @@ export default function Footer() {
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         © 2020 Copyright:
-        <a className='text-white' href='https://mdbootstrap.com/'>
+        <Link className='text-white' href={'https://mdbootstrap.com/'}>
           MDBootstrap.com
-        </a>
+        </Link>
       </div>
     </MDBFooter>
   );
