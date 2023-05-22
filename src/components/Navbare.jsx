@@ -4,7 +4,7 @@ import { useState } from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useRouter } from "next/router";
 
 import pich from "../pictures/cropped-big.png.webp"
 
@@ -67,57 +67,57 @@ const options1 = [
 ];
 
 const options2 = [
-  { label: "Métiers", value: "1", titel: "Junior",url:"" },
-  { label: "Option 2.2", value: "2", titel: "Confirmé",url:"" },
-  { label: "Option 2.3", value: "3", titel: "Expert",url:"" },
+  { label: "Métiers", value: "1", titel: "Junior", url: "" },
+  { label: "Option 2.2", value: "2", titel: "Confirmé", url: "" },
+  { label: "Option 2.3", value: "3", titel: "Expert", url: "" },
 ];
 
 const options3 = [
-    { label: "Technologies", value: "1", titel: "Langages",url:"" },
-    { label: "Option 2.2", value: "2", titel: "Frameworks et plateformes",url:"" },
-    { label: "Option 2.3", value: "3", titel: "Librairies",url:"" },
-    { label: "Option 2.3", value: "4", titel: "Outils",url:"" },
-  ];
+  { label: "Technologies", value: "1", titel: "Langages", url: "" },
+  { label: "Option 2.2", value: "2", titel: "Frameworks et plateformes", url: "" },
+  { label: "Option 2.3", value: "3", titel: "Librairies", url: "" },
+  { label: "Option 2.3", value: "4", titel: "Outils", url: "" },
+];
 
 const options4 = [
-    { label: "Entreprise", value: "1", titel: "Recruter un(e) alternant(e)",url:"" },
-    { label: "Option 2.2", value: "2", titel: "Publier une offre d'emploi",url:"" },
-    
-  ];
-  
- 
-  const options5 = [
-    { label: "Notre Academy", value: "1", titel: "Nous rencontrer",url:"" },
-    { label: "Option 2.2", value: "2", titel: "Nos engagements",url:"" },
-    { label: "Option 2.3", value: "3", titel: "Financements",url:"" },
-    { label: "Option 2.3", value: "4", titel: "OPCO et entreprises",url:"" },
-    { label: "Option 2.3", value: "5", titel: "Reconnaissances professionnelles",url:"" },
-    { label: "Option 2.3", value: "6", titel: "Espace presse",url:"" },
-  ];
-  
+  { label: "Entreprise", value: "1", titel: "Recruter un(e) alternant(e)", url: "" },
+  { label: "Option 2.2", value: "2", titel: "Publier une offre d'emploi", url: "" },
 
-  const options6 = [
-    { label: "Villes", value: "1", titel: "Villes & Campus",url:"" },
-    { label: "Option 2.2", value: "2", titel: "",url:"" },
-    { label: "Option 2.3", value: "3", titel: "",url:"" },
-  ];
-  
+];
+
+
+const options5 = [
+  { label: "Notre Academy", value: "1", titel: "Nous rencontrer", url: "" },
+  { label: "Option 2.2", value: "2", titel: "Nos engagements", url: "" },
+  { label: "Option 2.3", value: "3", titel: "Financements", url: "" },
+  { label: "Option 2.3", value: "4", titel: "OPCO et entreprises", url: "" },
+  { label: "Option 2.3", value: "5", titel: "Reconnaissances professionnelles", url: "" },
+  { label: "Option 2.3", value: "6", titel: "Espace presse", url: "" },
+];
+
+
+const options6 = [
+  { label: "Villes", value: "1", titel: "Villes & Campus", url: "" },
+  { label: "Option 2.2", value: "2", titel: "", url: "" },
+  { label: "Option 2.3", value: "3", titel: "", url: "" },
+];
+
 
 
 
 
 const Navbare = () => {
+  const router = useRouter();
   return (
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="justify-content-center flex-grow-1 pe-3">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/formation">formation</Nav.Link>
-            
-            
+          <Nav className="justify-content-center flex-grow-1 gap-5 pe-3">
+            <Link className={`no-underline py-1 px-2 ${router.pathname === '/' ? 'bg-orange-500 rounded-xl py-1 px-2 text-white' : ''}`} href="/">Home</Link>
+            <Link className={`no-underline py-1 px-2 ${router.pathname === '/formation' ? 'bg-orange-500 rounded-xl py-1 px-2 text-white' : ''}`} href="/formation">Formation</Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
