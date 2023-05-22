@@ -8,7 +8,7 @@ import Navbare from '@/components/Navbare';
 import Footer from '@/components/Footer';
 import Contact from '@/components/Contact';
 
-export default function Developweb() {
+export default function Integrateur() {
 
 
 
@@ -17,31 +17,34 @@ export default function Developweb() {
         <>
             <Navbare />
 
-            <section className='text-center  border-2 mx-5 my-5 rounded-xl shadow-gray-100 shadow-xl'>
+            <section className='text-center px-2 border-2 mx-5 my-5 rounded-xl shadow-gray-100 shadow-xl'>
 
-                <h2>Formation développeur web junior</h2>
+                <h2>Formation Intégrateur Développeur web</h2>
                 <div className=''>
                     <div className='mx-[13vw] '>
 
                         <h5>Les compétences acquises au cours de notre formation développeur web pour débutants</h5>
-                        <p>Les langages enseignés sont le HTML, le CSS, le JavaScript, le PHP et le SQL sous la forme d’un usage approfondi. Ce qui permet d’appréhender les technologies enseignées suivantes: Bootstrap, WordPress, VueJS et Symfony, et d’en acquérir les compétences de base.</p>
+                        <p>Les langages enseignés sont le Wordpress, HTML, CSS, SQL, JavaScript, PHP, React</p>
                     </div>
                     <div className=' '>
-                        <div className='flex justify-evenly lg:flex-row  md:flex-col '>
-                            <div className=''>
-                                <p className='border border-indigo-600 p-2 '>4 mois 574 h</p>
-                            </div>
-                            <div className=''>
-                                <p className='border border-indigo-600 p-2'>Formation ouverte a tout public, sans prérequis de diplome.</p>
-                            </div>
-                            <div className=''>
-                                <p className='border border-indigo-600 p-2'>en telepresentiel Temps plein</p>
-                            </div>
-                        </div>
+                        
+                                <div className='flex justify-evenly lg:flex-row  md:flex-col '>
+                                    <div className=''>
+                                        <p className='border border-indigo-600 p-2 '>15 mois 855h</p>
+                                    </div>
+                                    <div className=''>
+                                        <p className='border border-indigo-600 p-2'>Formation ouverte a tout public, sans prérequis de diplome.</p>
+                                    </div>
+                                    <div className=''>
+                                        <p className='border border-indigo-600 p-2'>en telepresentiel Temps plein</p>
+                                    </div>
+                                </div>
+
+                           
 
                     </div>
                 </div>
-
+                
 
 
                 <div className="lg:w-[80vw] md:w-[vw] rounded-lg  mb-5 bg-slate-300 mx-auto">
@@ -142,8 +145,9 @@ export default function Developweb() {
                         </Row>
                     </Tab.Container>
                 </div>
+                
             </section>
-            <Contact />
+            <Contact/>
             <Footer />
         </>
     );

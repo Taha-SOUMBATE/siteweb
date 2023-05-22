@@ -3,13 +3,14 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link';
-
+import dev from "./developweb"
+import Contact from '@/components/Contact';
 
 
 const Page = () => {
 
     return (
-        <div className='md:w-[95vw] md:ps-[5vw] lg:w-[95vw] lg:ps-[7vw] w-full xl:w-[96vw] xl:ps-[11vw]  font-bold'>
+        <div className='md:w-[95vw] md:ps-[5vw] lg:w-[95vw] lg:ps-[7vw] w-full xl:w-[96vw] overflow-x-hidden xl:ps-[11vw]  font-bold'>
 
             <section className="my-5 section1">
                 <div className="justify-between flex items-center md:items-start px-2 md:px-0 md: lg:px-0 flex-row ">
@@ -19,23 +20,24 @@ const Page = () => {
                         <p className="text-base">Accédez à de nouvelles opportunités grâce à nos formations immersives en développement web et en data.</p>
                         <Link href={'#form'} className="rounded-md no-underline bg-orange-400 p-1 text-white">no formation</Link>
                     </div>
-                    <div id="carouselExampleRide" className="carousel slide w-[40vw]  md:w-[25vw] " data-bs-ride="true">
-                        <div className="carousel-inner">
+                    <div id="carouselExampleRide" class="carousel slide w-[30vw]" data-bs-ride="true">
+                        <div class="carousel-inner">
                             {photo.map((photos, index) => (
                                 <div key={photos.id} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                                    <img src={photos.pick} className="d-block" alt="" />
+                                    <img src={photos.pick} className="d-block w-100" alt="" />
                                 </div>
                             ))}
                         </div>
-                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
-                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                         </button>
                     </div>
+
                 </div>
             </section>
 
@@ -73,22 +75,34 @@ const Page = () => {
                 <h2 id='form' className='text-2xl text-orange-400 hover:text-orange-100 bg-orange-100 hover:bg-orange-400 md:w-[80vw] lg:w-[80vw] xl:w-[85vw] mx-auto  text-center   p-1 rounded-lg'>Nos formation </h2>
                 <p>Des programmes qui ont aidé des milliers d'étudiants à se lancer dans de nouvelles carrières dans l'industrie tech.</p>
 
-                <div className="grid lg:grid-cols-2 xl:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-4">
+                <div className="grid  lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-4">
 
-                    {
-                        card.map((cards) => (
-                            <div class="card " key={cards.id}>
-                                <img src={cards.img} class="card-img-top" alt="..." />
-                                <div class="card-body lg:h-[37vh] xl:h-[29vh] md:h-[25vh] flex flex-col justify-between ">
-                                    <h5 class="card-title text-lg">{cards.title}</h5>
-                                    <p class="card-text text-sm">{cards.dsck}</p>
-                                    <a href={cards.lin} class="bg-orange-300 p-1 text-center no-underline text-white rounded-lg dec">{cards.btne}</a>
-                                </div>
-                            </div>
-                        ))
-                    }
-                  
-                   
+                    <div class="card" >
+                        <img src="https://dummyimage.com/100/300/fff" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Développeur Débutant</h5>
+                            <p class="card-text">Acquérir les 5 langages et technologies pour devenir développeur web</p>
+                            <a href="./developweb" class="btn btn-primary">Développeur Débutant</a>
+                        </div>
+                    </div>
+                    <div class="card" >
+                        <img src="https://dummyimage.com/100/300/fff" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Développeur Confirmé</h5>
+                            <p class="card-text">Vous spécialiser sur des technologies et des frameworks actuels</p>
+                            <a href="./developweb" class="btn btn-primary">Développeur Confirmé</a>
+                        </div>
+                    </div>
+                    <div class="card" >
+                        <img src="https://dummyimage.com/100/300/fff" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Développeur Confirmé</h5>
+                            <p class="card-text">Vous spécialiser sur des technologies et des frameworks actuels</p>
+                            <a href="./developweb" class="btn btn-primary">Développeur Confirmé</a>
+                        </div>
+                    </div>
+
+
                 </div>
 
                 <Link href={'./formation'} class="bg-orange-300 p-1 block mx-auto xl:w-[8vw] lg:w-[9vw] md:w-[13vw] w-[14vw]   my-4 text-center no-underline text-white rounded-lg dec">seee more</Link>
@@ -102,7 +116,7 @@ const Page = () => {
                         parcour.map((parcours) => (
                             <div className="  mb-3">
                                 <div class="card " key={parcours.id}>
-                                    <div class="card-body md:h-[50vh] lg:h-[50vh] xl:h-[40vh] h-[30vh] flex flex-col gap-10">
+                                    <div class="card-body md:h-[40vh] lg:h-[20vh] xl:h-[32vh] h-[30vh] flex flex-col gap-10">
                                         <h5 class="card-title md:text-lg font-bold xl:text-[21px] lg:text-[17px]">{parcours.nom}</h5>
                                         <p class="card-text">Durée {parcours.time}</p>
 
@@ -137,27 +151,7 @@ const Page = () => {
                 </div>
             </section>
 
-            <section class="bg-white  dark:bg-gray-900">
-                <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
-                    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
-                    <form action="#" class="space-y-8">
-                        <div>
-                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required />
-                        </div>
-                        <div>
-                            <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                            <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required />
-                        </div>
-                        <div class="sm:col-span-2">
-                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                            <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
-                        </div>
-                        <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
-                    </form>
-                </div>
-            </section>
+           <Contact/>
 
         </div>
     );

@@ -12,7 +12,7 @@ export default function Home() {
     <>
 
     <Navbare/>
-    <Developweb/>
+    
     <Page/>
     <Footer/>
     </>

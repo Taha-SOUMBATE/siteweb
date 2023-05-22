@@ -17,7 +17,11 @@ const Formation = () => {
                                 <div class="card-body lg:h-[37vh] xl:h-[29vh] md:h-[25vh] flex flex-col justify-between ">
                                     <h5 class="card-title text-lg">{cards.title}</h5>
                                     <p class="card-text text-sm">{cards.dsck}</p>
-                                    <Link href={'/'} class="bg-orange-300 p-1 text-center no-underline text-white rounded-lg dec">{cards.btne}</Link>
+                                    {cards.lin ? (
+          <Link href={cards.lin} class="bg-orange-300 p-1 text-center no-underline text-white rounded-lg dec">{cards.btne}</Link>
+        ) : (
+          <p>No link available</p>
+        )}
                                 </div>
                             </div>
                         ))
