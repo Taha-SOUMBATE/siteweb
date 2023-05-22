@@ -7,7 +7,7 @@ const Formation = () => {
     return (
         <div>
             <Navbare />
-            <section className='my-5'>
+            <section className='my-5 '>
                 <div className="grid lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-2 px-5 grid-cols-2 gap-4">
 
                     {

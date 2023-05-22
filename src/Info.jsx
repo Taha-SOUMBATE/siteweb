@@ -42,6 +42,22 @@ export const card = [
         btne: "Développeur Expert",
         lin:"./fullStackR"
     },
+    {
+        id: 4,
+        img: "https://dummyimage.com/300/300/fff",
+        title: "web Fullstack ",
+        dsck: "Devenez expert en IA ou en cybersécurité",
+        btne: "Développeur Expert",
+        lin:"./fullStackR"
+    },
+    {
+        id: 5,
+        img: "https://dummyimage.com/300/300/fff",
+        title: "web Fullstack ",
+        dsck: "Devenez expert en IA ou en cybersécurité",
+        btne: "Développeur Expert",
+        lin:"./fullStackR"
+    },
     
 
 
