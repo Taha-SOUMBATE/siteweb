@@ -111,10 +111,10 @@ const Navbare = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="/">3w ademy</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="justify-content-center flex-grow-1 gap-5 pe-3">
+          <Nav className="justify-content-center flex-grow-1 md:gap-1 lg:gap-5 pe-3">
             <Link className={`no-underline py-1 px-2 ${router.pathname === '/' ? 'bg-orange-500 rounded-xl py-1 px-2 text-white' : ''}`} href="/">Home</Link>
             <Link className={`no-underline py-1 px-2 ${router.pathname === '/formation' ? 'bg-orange-500 rounded-xl py-1 px-2 text-white' : ''}`} href="/formation">Formation</Link>
 

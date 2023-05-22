@@ -1,4 +1,5 @@
 import { card } from '@/Info';
+import Contact from '@/components/Contact';
 import Navbare from '@/components/Navbare';
 import Link from 'next/link';
 import React from 'react';
@@ -18,10 +19,10 @@ const Formation = () => {
                                     <h5 class="card-title text-lg">{cards.title}</h5>
                                     <p class="card-text text-sm">{cards.dsck}</p>
                                     {cards.lin ? (
-          <Link href={cards.lin} class="bg-orange-300 p-1 text-center no-underline text-white rounded-lg dec">{cards.btne}</Link>
-        ) : (
-          <p>No link available</p>
-        )}
+                                        <Link href={cards.lin} class="bg-orange-300 p-1 text-center no-underline text-white rounded-lg dec">{cards.btne}</Link>
+                                    ) : (
+                                        <p>No link available</p>
+                                    )}
                                 </div>
                             </div>
                         ))
@@ -31,6 +32,7 @@ const Formation = () => {
                 </div>
 
             </section>
+            <Contact/>
         </div>
     );
 }

@@ -42,7 +42,7 @@ export default function Footer() {
 
         <section className=''>
           <MDBRow>
-            <MDBCol lg='12' md='6'  className='mb-4 mb-md-0'>
+            <MDBCol lg='12' md='12'  className='mb-4 mb-md-0'>
               <h5 className='text-uppercase'>Links</h5>
 
               <ul className='list-unstyled mb-0 flex justify-center gap-5'>
