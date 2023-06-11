@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .section {
+    @apply xl:mx-[6vw] mx-auto md:mx-8;
+  }
+  .titel {
+    @apply text-center text-white text-2xl bg-[#F73F03]  mx-auto  p-1 rounded-lg;
+  }
+  .cardes {
+    @apply md:h-[30vh] lg:h-[30vh] xl:h-[30vh] h-[30vh] flex flex-col justify-between;
+  }
+}

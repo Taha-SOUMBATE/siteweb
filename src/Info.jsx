@@ -12,7 +12,7 @@ export const photo = [
         pick: 'https://t4.ftcdn.net/jpg/05/96/94/01/240_F_596940156_YFToVfFX9yzMPKPTtOLhDniGGdCqHXI4.jpg',
 
     },
-   
+
 ];
 
 
@@ -32,7 +32,7 @@ export const card = [
         title: "Intégrateur Web",
         dsck: "Vous spécialiser sur des technologies et des frameworks actuels",
         btne: "Développeur Confirmé",
-        lin:"./integrateur"
+        lin: "./integrateur"
     },
     {
         id: 3,
@@ -40,7 +40,7 @@ export const card = [
         title: "web Fullstack ",
         dsck: "Devenez expert en IA ou en cybersécurité",
         btne: "Développeur Expert",
-        lin:"./fullStackR"
+        lin: "./fullStackR"
     },
     {
         id: 4,
@@ -48,7 +48,7 @@ export const card = [
         title: "web Fullstack ",
         dsck: "Devenez expert en IA ou en cybersécurité",
         btne: "Développeur Expert",
-        lin:"./fullStackR"
+        lin: "./fullStackR"
     },
     {
         id: 5,
@@ -56,9 +56,9 @@ export const card = [
         title: "web Fullstack ",
         dsck: "Devenez expert en IA ou en cybersécurité",
         btne: "Développeur Expert",
-        lin:"./fullStackR"
+        lin: "./fullStackR"
     },
-    
+
 
 
 ];
@@ -66,60 +66,76 @@ export const parcour = [
     {
         id: 1,
         icone: "",
-        nom: "Accompagnement personnalisé",
-        time: "Chaque étudiant sera accompagné par un instructeur de haut niveau. Nous croyons fermement qu'une formation efficace passe par une assistance humaine.",
+        nom: "90% PRACTICE, 10% THEORY",
+        time: [
+
+            `1- Maîtrise le code.`,
+            "  2- Apprends en pratiquant.",
+            " 3- Deviens un expert du code."
+        ],
     },
     {
         id: 2,
         icone: "",
-        nom: "Un parcours orienté projets",
-        time: "En plus de contenir un projet final, chaque parcours contient plusieurs projets et exercices pratiques pour donner la possibilité à l'étudiant de tester et construire par lui même.",
+        nom: "A LEARNING JOURNEY WITH OVER 35 PROJECTS",
+        time: [
+            " 1- Expérimente.Recommence. ",
+            " 2- Apprends de tes échecs. ",
+            " 3- Recommence.Atteins le succès. "
+        ],
     },
     {
         id: 3,
-        nom: "La communauté GOMYCODE",
-        time: "En rejoignant GOMYCODE vous aurez accès au support de toute une communauté passionnée par le numérique pour vous motiver au quotidien. Nous organisons aussi différents événements: hackathons, talks, panels… pour notre communauté.",
+        nom: "INSTRUCTOR-LED = NO TIME TO WASTE",
+        time: [
+            " 1- Maximise ton potentiel. ",
+            " 2- Minimise ton temps perdu. "
+
+        ],
     },
     {
-        id: 3,
-        nom: "Un contenu riche et interactif",
-        time: "Le contenu de nos parcours est élaboré avec les entreprises partenaires de GOMYCODE. Il est orienté employabilité et il est constamment mis à jour selon les demandes des recruteurs.",
+        id: 4,
+        nom: "  INDIVIDUAL CAREER COACHING ",
+        time: " 1- Dévoile ton talent grâce à un accompagnement professionnel personnalisé.",
     },
 ];
+import first from "./pictures/gagnant.png"
+
+
 export const dipliom = [
     {
         id: 1,
-        img: "https://dummyimage.com/900/000/fff",
+        img: first,
         titel: "1er bootcamp en France",
         text: "4500 alumni formés depuis 2012"
     },
     {
         id: 2,
-        img: "https://dummyimage.com/900/000/fff",
+        img: first,
         titel: "Enseignées par des professionnels",
         text: "qui partagent plus qu'une passion !"
     },
     {
         id: 3,
-        img: "https://dummyimage.com/900/000/fff",
+        img: first,
         titel: "Certifiées et reconnues",
         text: "par l'état, le secteur et les entreprises"
     },
     {
         id: 4,
-        img: "https://dummyimage.com/900/000/fff",
+        img: first,
         titel: "Testez nos cours gratuitement",
         text: "depuis chez vous et dès maintenant !"
     },
     {
         id: 5,
-        img: "https://dummyimage.com/900/000/fff",
+        img: first,
         titel: "Osez la reconversion professionnelle",
         text: "ar l'ambition est le seul pré-requis"
     },
     {
         id: 6,
-        img: "https://dummyimage.com/900/000/fff",
+        img: first,
         titel: "Spécialisez vous davantage",
         text: "avec des programmes pour tous niveaux"
     },
