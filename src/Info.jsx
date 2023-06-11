@@ -165,4 +165,31 @@ export const slides = [
     ],
 ];
 
+import testphoto from './pictures/testphoto.jpg';
 
+export const hero = [
+  {
+    img: testphoto,
+    title: "taha soumbate",
+    slides: "full stack",
+    link: "https://getbootstrap.com/docs/5.3/components/card/"
+  },
+  {
+    img: testphoto,
+    title: "taha soumbate",
+    slides: "full stack",
+    link: "https://getbootstrap.com/docs/5.3/components/card/"
+  },
+  {
+    img: testphoto,
+    title: "taha soumbate",
+    slides: "full stack",
+    link: "https://getbootstrap.com/docs/5.3/components/card/"
+  },
+  {
+    img: testphoto,
+    title: "taha soumbate",
+    slides: "full stack",
+    link: "https://getbootstrap.com/docs/5.3/components/card/"
+  },
+];

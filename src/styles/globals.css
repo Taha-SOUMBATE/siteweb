@@ -1,10 +1,12 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   .section {
-    @apply xl:mx-[6vw] mx-auto md:mx-8;
+    @apply xl:mx-[7vw] mx-auto md:mx-8;
   }
   .titel {
     @apply text-center text-white xl:text-[20px] lg:text-[20px] font-bold md:text-[15px] bg-[#F73F03]  mx-auto  p-1 rounded-lg;
@@ -19,7 +21,7 @@
 }
 
 
-.img::before {
+.img::before , .img2::before, .img3::before  {
   content: '';
   position: absolute;
   top: 0;
@@ -27,13 +29,14 @@
   height: 100%;
   width: 100%;
   z-index: -1;
-  background-color: rgba(255, 0, 0,0.5);
+  background-color: rgba(255, 0, 0,0.2);
   transform: scale(0.5);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.img:hover::before {
-  content: 'txte';
+.img:hover::before
+ {
+  content: 'jhbu';
   justify-content: center;
   color: white;
   font-size: 30px;
@@ -45,6 +48,42 @@
   height: 100%;
   width: 100%;
   z-index: 10;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.2);
+  transform: scale(1);
+}
+
+.img2:hover::before
+ {
+  content: 'hgfygfhg';
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(255, 0, 0, 0.2);
+  transform: scale(1);
+}
+
+.img3:hover::before
+ {
+  content: 'jgvhgc';
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(255, 0, 0, 0.2);
   transform: scale(1);
 }
