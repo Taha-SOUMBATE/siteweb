@@ -7,9 +7,12 @@
     @apply xl:mx-[6vw] mx-auto md:mx-8;
   }
   .titel {
-    @apply text-center text-white text-2xl bg-[#F73F03]  mx-auto  p-1 rounded-lg;
+    @apply text-center text-white xl:text-[20px] lg:text-[20px] font-bold md:text-[15px] bg-[#F73F03]  mx-auto  p-1 rounded-lg;
   }
   .cardes {
-    @apply md:h-[30vh] lg:h-[30vh] xl:h-[30vh] h-[30vh] flex flex-col justify-between;
+    @apply md:h-[38vh] lg:h-[34vh] xl:h-[30vh] h-[30vh] flex flex-col justify-between;
+  }
+  .hero{
+    @apply xl:w-[20vw] xl:text-[17px] font-light
   }
 }

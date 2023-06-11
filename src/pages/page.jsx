@@ -41,12 +41,47 @@ const Page = () => {
 
                 </div>
             </section>
-
-
-
-
+            <section className='section'>
+                <h2 className='titel'>On ne naît pas HERO, On le devient.</h2>
+                <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
+                    <div className="">
+                        <p className='text-9xl '>H</p>
+                        <h3 className='text-5xl'>Hustle</h3>
+                        <p className='hero'>
+                            Sois la meilleure version de toi-même. <br />
+                            Poursuis tes rêves. <br />
+                            Laisse ton empreinte.</p>
+                    </div>
+                    <div className="">
+                        <p className='text-9xl '>E</p>
+                        <h3 className='text-5xl'>Evolve</h3>
+                        <p className='hero'>
+                            Essaies de nouvelles choses. <br />
+                            Adopte le changement. <br />
+                            Sois prêt.</p>
+                    </div>
+                    <div className="">
+                        <p className='text-9xl '>R</p>
+                        <h3 className='text-5xl'>Rise</h3>
+                        <p className='hero'>
+                            Surpasse la concurrence.<br />
+                            Surpasse tes attentes. <br />
+                            Surpasse l'ordinaire. <br />
+                            Surpasse 'TOI'.<br />
+                        </p>
+                    </div>
+                    <div className="">
+                        <p className='text-9xl '>O</p>
+                        <h3 className='text-5xl'>Obtain</h3>
+                        <p className='hero'>
+                            Saisis chaque opportunité.<br />
+                            Prépare toi à relever les défis et à réaliser tes rêves les plus audacieux.
+                        </p>
+                    </div>
+                </div>
+            </section>
             <section className='my-5 section'>
-                <h2 id='form' className='titel md:w-[92vw] lg:w-[93vw] xl:w-[88vw] '>Nos formation </h2>
+                <h2 id='form' className='titel  '>Nos formation </h2>
                 <p className='text-center'>Des programmes qui ont aidé des milliers d'étudiants à se lancer dans de nouvelles carrières dans l'industrie tech.</p>
 
                 <div className="grid  lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-5">
@@ -75,12 +110,7 @@ const Page = () => {
                             <Link href="./developweb" class="rounded-md no-underline bg-[#F73F03] py-2 px-1 text-white">Développeur Confirmé</Link>
                         </div>
                     </div>
-
-
                 </div>
-
-
-
             </section>
             <section className='section '>
                 <h2 className='titel md:w-[90vw] lg:w-[88vw] xl:w-[88vw] mx-auto  text-center my-5  p-1 rounded-lg'>Pourquoi notre méthodologie est efficace ?</h2>
@@ -109,12 +139,9 @@ const Page = () => {
                             <div class="card-body cardes ">
                                 <h5 class="card-title md:text-lg text-center font-bold xl:text-[18px] lg:text-[17px]">90% PRACTICE, 10% THEORY</h5>
 
-                                <p class="card-text w-[18vw] ">Maîtrise le code.<br />
+                                <p class="card-text w-[28vw] ">Maîtrise le code.<br />
                                     Apprends en pratiquant.<br />
                                     Deviens un expert du code.</p>
-
-
-
                             </div>
                         </div>
                     </div>
@@ -126,7 +153,7 @@ const Page = () => {
                             <div class="card-body cardes">
                                 <h5 class="card-title md:text-lg text-center  font-bold xl:text-[18px] lg:text-[17px]">A LEARNING JOURNEY WITH OVER 35 PROJECTS</h5>
 
-                                <p class="card-text w-[18vw] ">Expérimente.<br />
+                                <p class="card-text w-[29vw] ">Expérimente.<br />
                                     Recommence.<br />
                                     Apprends de tes échecs.<br />
                                     Recommence.<br />
@@ -146,7 +173,7 @@ const Page = () => {
                             <div class="card-body cardes">
                                 <h5 class="card-title md:text-lg text-center font-bold xl:text-[18px] lg:text-[17px]">INSTRUCTOR-LED = NO TIME TO WASTE</h5>
 
-                                <p class="card-text w-[18vw] ">Maximise ton potentiel.<br /> Minimise ton temps perdu.</p>
+                                <p class="card-text w-[30vw] ">Maximise ton potentiel.<br /> Minimise ton temps perdu.</p>
 
 
 
@@ -161,7 +188,7 @@ const Page = () => {
                             <div class="card-body cardes">
                                 <h5 class="card-title md:text-lg text-center font-bold xl:text-[18px] lg:text-[17px]">INDIVIDUAL CAREER COACHING </h5>
 
-                                <p class="card-text w-[18vw] ">Dévoile ton talent grâce à un accompagnement professionnel personnalisé.</p>
+                                <p class="card-text w-[25vw] ">Dévoile ton talent grâce à un accompagnement professionnel personnalisé.</p>
 
 
 
@@ -171,7 +198,7 @@ const Page = () => {
                 </div>
             </section>
             <section className='my-5 section'>
-                <h2 className='  titel md:w-[90vw] md:text-[12.8px] lg:w-[88vw] lg:text-[16px] xl:w-[85vw] xl:text-[20px] font-bold mx-auto  text-center my-5   px-1 py-2 rounded-lg'>Des formations diplômantes faites par des experts plus que passionnés
+                <h2 className='  titel md:w-[90vw]  lg:w-[88vw] lg:text-[16px] xl:w-[85vw]  font-bold mx-auto  text-center my-5   px-1 py-2 rounded-lg'>Des formations diplômantes faites par des experts plus que passionnés
                     pour vous mener au succès professionnel.</h2>
                 <div className="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-2">
 
@@ -183,8 +210,8 @@ const Page = () => {
                                     <div className=" xl:w-[4vw] lg:w-[5vw] md:w-[7vw] mt-2 mx-auto">
                                         <Image src={diplioms.img} class="card-img-top h-[6vh]" alt="..." />
                                     </div>
-                                    <div class="card-body h-[20vh] xl:h-[15vw]  text-center flex  flex-col justify-between lg:h-[20vh] md:h-[16vh]">
-                                        <h4 class="card-title text-xl xl:text-[25px]  lg:text-[20px]  font-bold">{diplioms.titel}</h4>
+                                    <div class="card-body h-[20vh] xl:h-[15vw]  text-center flex  flex-col justify-between lg:h-[20vh] md:h-[20vh]">
+                                        <h4 class="card-title text-xl xl:text-[25px]  lg:text-[20px] md:text-[18px]  font-bold">{diplioms.titel}</h4>
                                         <p class="card-text">{diplioms.text}</p>
                                     </div>
                                 </div>
@@ -195,8 +222,8 @@ const Page = () => {
                 </div>
             </section>
             <section className=''>
-                <h2 className="titel xl:w-[81vw] lg:w-[52.3vw] md:w-[78vw] my-5 w-[87vw]">Partenaires recruteurs<br />Rejoignez les meilleures entreprises tech</h2>
-                <p className='text-[16px] md:w-[80vw] lg:w-[55vw] xl:w-[80vw] mx-auto  text-center   sm:px-2 lg:px-1 rounded-lg'>Dès la fin de la formation, notre équipe Carrières vous accompagnera dans votre recherche d'emploi pour trouver le job de vos rêves.</p>
+                <p className="titel xl:w-[81vw] lg:w-[88vw] md:w-[78vw] my-5 w-[87vw]">Partenaires recruteurs<br />Rejoignez les meilleures entreprises tech</p>
+                <p className=' titel md:w-[80vw] lg:w-[88vw] xl:w-[81vw] mx-auto  text-center   sm:px-2 lg:px-1 rounded-lg'>Dès la fin de la formation, notre équipe Carrières vous accompagnera dans votre recherche d'emploi pour trouver le job de vos rêves.</p>
 
 
                 <div id="carouselExampleAutoplaying" className="carousel slide flex     " data-bs-ride="carousel">
@@ -205,7 +232,7 @@ const Page = () => {
                             <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                                 <div className="flex flex-wrap justify-center">
                                     {slide.map((imgSrc, imgIndex) => (
-                                        <div key={imgIndex} className=" lg:w-[17vw] xl:w-[24vw]  md:mx-7 md:w-[21vw]   my-3 w-[20vw]">
+                                        <div key={imgIndex} className=" lg:w-[17vw] xl:w-[24vw]  md:mx-3 md:w-[24vw]   my-3 w-[20vw]">
                                             <img src={imgSrc} className="mx-auto w-full" alt="..." />
                                         </div>
                                     ))}
