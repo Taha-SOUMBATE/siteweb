@@ -15,4 +15,36 @@
   .hero{
     @apply xl:w-[20vw] xl:text-[17px] font-light
   }
+  
+}
+
+
+.img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: rgba(255, 0, 0,0.5);
+  transform: scale(0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.img:hover::before {
+  content: 'txte';
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(255, 0, 0, 0.5);
+  transform: scale(1);
 }
