@@ -193,3 +193,34 @@ export const hero = [
     link: "https://getbootstrap.com/docs/5.3/components/card/"
   },
 ];
+
+export const news = [
+    {
+        pick: testphoto,
+        titel:"blog",
+        subtitel:"b1",
+        info:"b1 ",
+
+    },
+    {
+        pick: testphoto,
+        titel:"blog",
+        subtitel:"b2",
+        info:"b2",
+
+    },
+    {
+        pick: testphoto,
+        titel:"blog",
+        subtitel:"b3",
+        info:"b3",
+
+    },
+    {
+        pick: testphoto,
+        titel:"blog",
+        subtitel:"b4",
+        info:"b4",
+
+    },
+]

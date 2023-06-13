@@ -6,7 +6,7 @@
 
 @layer components {
   .section {
-    @apply xl:mx-[7vw] mx-auto md:mx-8;
+    @apply xl:mx-[5vw] mx-auto md:mx-8;
   }
   .titel {
     @apply text-center text-white xl:text-[20px] lg:text-[20px] font-bold md:text-[15px] bg-[#F73F03]  mx-auto  p-1 rounded-lg;
@@ -86,4 +86,24 @@
   z-index: 10;
   background-color: rgba(255, 0, 0, 0.2);
   transform: scale(1);
+}
+
+
+.content{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+opacity: 0;
+  background-color: rgba(0, 0, 0,0.5);
+}
+.content:hover{
+  opacity: 1;
+}
+.box{
+  height: 1px;
+  width: 70%;
+  background-color: black;
 }
