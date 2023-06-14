@@ -18,7 +18,7 @@ const Blog = () => {
                             >
                         <span className='img' >
                             
-                            <Image src={image} height={500} width={500} alt="img" />
+                            <Image src={image} height={500} alt="img" />
                             
 
                         </span>
@@ -27,14 +27,14 @@ const Blog = () => {
                     <div className="relative">
                         <Link href="https://goo.gl/maps/Mb5rvX37fdBQPwCU9" target='_blank'>
                         <span className='img2' >
-                            <Image src={image} height={500} width={500} alt="img" />
+                            <Image src={image} height={500} alt="img" />
 
                         </span>
                         </Link>
                     </div>
                     <div className="relative">
                         <span className='img3' >
-                            <Image src={image} height={500} width={500} alt="img" />
+                            <Image src={image} height={500}  alt="img" />
 
                         </span>
                     </div>
