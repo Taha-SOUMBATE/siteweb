@@ -9,7 +9,7 @@ const Formation = () => {
         <div>
             <Navbare />
             <section className='my-5 '>
-                <div className="grid lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-2 px-5 grid-cols-2 gap-4">
+                <div className="grid lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-2  px-2 grid-cols-1 gap-4">
 
                     {
                         card.map((cards) => (

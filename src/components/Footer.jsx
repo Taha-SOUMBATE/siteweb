@@ -84,7 +84,7 @@ export default function Footer() {
     //   </div>
     // </MDBFooter>
     <>
-      <div className="grid section  xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4 ">
+      <div className="grid xl:grid-cols-4  mx-6 lg:grid-cols-3 md:grid-cols-2 gap-4 ">
         <div className="">
           <Image src={logo} height={40} />
           <p>
@@ -107,7 +107,7 @@ export default function Footer() {
             <Link href={'#'} className='no-underline text-lg text-gray-500'>Blog</Link>
           </span>
         </div>
-        <div className=''> 
+        <div className=' lg:place-self-stretch place-self-center'> 
           <h2>Contactez-Nous</h2>
           <i class="bi bi-envelope-fill"></i>
           <Link href={'mailto:hello@3wa.io'}  className='text-black ms-2  no-underline'>Email: hello@3wa.io</Link>
@@ -117,7 +117,7 @@ export default function Footer() {
         </div>
         <div className=''>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13293.397558589171!2d-7.612677000000001!3d33.596238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d3731f922c01%3A0x5e46c1e1fc83142d!2s3W%20Academy%20Maroc!5e0!3m2!1sen!2sus!4v1686501093460!5m2!1sen!2sus"  
-        className='rounded-xl drop-shadow-xl shadow-orange-200 xl:h-[35vh] w-[20vw]  '  style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        className='rounded-xl drop-shadow-xl shadow-orange-200 h-[35vh] w-[100%]   '   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
       <h2 className='titel'>© 3W Academy Maroc 2023</h2>

@@ -141,25 +141,27 @@ export const dipliom = [
     },
 ];
 
+import logo from './pictures/wa.png'
+
 export const slides = [
     [
-        'https://dummyimage.com/200/300/fff',
-        'https://dummyimage.com/300/300/fff',
-        'https://dummyimage.com/300/300/fff',
+        logo,
+        logo,
+        logo,
 
 
     ],
     [
-        'https://dummyimage.com/200/300/fff',
-        'https://dummyimage.com/300/300/fff',
-        'https://dummyimage.com/300/300/fff',
+        logo,
+        logo,
+        logo,
 
 
     ],
     [
-        'https://dummyimage.com/100/300/fff',
-        'https://dummyimage.com/300/300/fff',
-        'https://dummyimage.com/300/300/fff',
+        logo,
+        logo,
+        logo,
 
 
     ],

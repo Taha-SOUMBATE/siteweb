@@ -1,9 +1,9 @@
-import { card, dipliom, parcour, photo, slides } from '@/Info';
+import { dipliom, photo, slides } from '@/Info';
 import React from 'react';
 import pc from '../pictures/pc.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link';
-import dev from "./developweb"
+
 import Contact from '@/components/Contact';
 import Image from 'next/image';
 
@@ -14,14 +14,16 @@ const Page = () => {
         <div className='  overflow-x-hidden   font-bold'>
 
             <section className="my-5  section">
-                <div className="justify-between flex items-center md:items-start px-2  md:px-0 md: lg:px-0 flex-row ">
-                    <div className=" text-start w-[50vw] static md:w-[40vw] ">
-                        <h2 className='text-xl'>Accélérez votre carrière, formez-vous aux<br /></h2>
-                        <h2 className="bg-[#F73F03]  text-white  md:w-[34vw] lg:w-[25.1vw] xl:w-[21.1vw] sm:w-[36vw] p-1 rounded-lg">métiers de la Tech</h2>
-                        <p className="text-base">Accédez à de nouvelles opportunités grâce à nos formations immersives en développement web et en data.</p>
-                        <Link href={'#form'} className="rounded-md no-underline bg-[#F73F03] py-2 px-4 lg:top-[30vw] lg:left-[20vw] absolute text-white">rejoignez nous</Link>
+                <div className="justify-between flex md:flex-row items-center md:items-start px-2  md:px-0 md: lg:px-0  ">
+                    <div className=" text-start w-[50vw] static md:w-[45vw] ">
+                        <h2 className='xl:text-2xl lg:text-xl md:text-lg text-sm'>Accélérez votre carrière, formez-vous aux<br /></h2>
+                        <h2 className="bg-[#F73F03]  text-white xl:w-[20vw] lg:w-[24vw] md:w-[31vw] md:text-[27px] text-[18px] w-[83%] md:px-2 md:py-3 px-1 py-2 rounded-lg">métiers de la Tech</h2>
+                        <p className="md:text-base  text-xs">Accédez à de nouvelles opportunités grâce à nos formations immersives en développement web et en data.</p>
+                        <p className="md:text-base  text-xs">Accédez à de nouvelles opportunités grâce à nos formations immersives en développement web et en data.</p>
+                        <p className="md:text-base xl:mb-20  text-xs">Accédez à de nouvelles opportunités grâce à nos formations immersives en développement web et en data.</p>
+                        <Link href={'#form'} className="rounded-md no-underline bg-[#F73F03] py-2 px-3  text-white">rejoignez nous</Link>
                     </div>
-                    <div id="carouselExampleRide" class="carousel slide w-[30vw]" data-bs-ride="true">
+                    <div id="carouselExampleRide" class="carousel slide md:w-[30vw] w-[40vw]" data-bs-ride="true">
                         <div class="carousel-inner">
                             {photo.map((photos, index) => (
                                 <div key={photos.id} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
@@ -82,9 +84,9 @@ const Page = () => {
             </section>
             <section className='my-5 section'>
                 <h2 id='form' className='titel  '>Nos formation </h2>
-                <p className='text-center'>Des programmes qui ont aidé des milliers d'étudiants à se lancer dans de nouvelles carrières dans l'industrie tech.</p>
+                <p className='text-center xl:text-xl lg:text-lg md:text-md'>Des programmes qui ont aidé des milliers d'étudiants à se lancer dans de nouvelles carrières dans l'industrie tech.</p>
 
-                <div className="grid  lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-5">
+                <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5">
 
                     <div class="card" >
                         <img src="https://dummyimage.com/100/300/fff" class="card-img-top" alt="..." />
@@ -113,7 +115,7 @@ const Page = () => {
                 </div>
             </section>
             <section className='section '>
-                <h2 className='titel md:w-[90vw] lg:w-[88vw] xl:w-[88vw] mx-auto  text-center my-5  p-1 rounded-lg'>Pourquoi notre méthodologie est efficace ?</h2>
+                <h2 className='titel '>Pourquoi notre méthodologie est efficace ?</h2>
                 <div className="grid lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 ">
                     {/* {
                         parcour.map((parcours) => (
@@ -133,13 +135,13 @@ const Page = () => {
                     } */}
                     <div className="  ">
                         <div class="card " >
-                            <div className=" w-[5vw] mx-auto">
+                            <div className=" md:w-[5vw] mx-auto">
                                 <Image src={pc} class="card-img-top text-[#F73F03]" alt="img" />
                             </div>
                             <div class="card-body cardes ">
-                                <h5 class="card-title md:text-lg text-center font-bold xl:text-[18px] lg:text-[17px]">90% PRACTICE, 10% THEORY</h5>
+                                <h5 class="card-title md:text-lg text-center font-bold xl:text-[20px] lg:text-[19px]">90% PRACTICE, 10% THEORY</h5>
 
-                                <p class="card-text w-[28vw] ">Maîtrise le code.<br />
+                                <p class="card-text md:w-[28vw] ">Maîtrise le code.<br />
                                     Apprends en pratiquant.<br />
                                     Deviens un expert du code.</p>
                             </div>
@@ -147,48 +149,42 @@ const Page = () => {
                     </div>
                     <div className="  ">
                         <div class="card " >
-                            <div className=" w-[5vw] mx-auto">
+                            <div className=" md:w-[5vw] mx-auto">
                                 <Image src={pc} class="card-img-top " alt="img" />
                             </div>
-                            <div class="card-body cardes">
+                            <div class="card-body cardes ">
                                 <h5 class="card-title md:text-lg text-center  font-bold xl:text-[18px] lg:text-[17px]">A LEARNING JOURNEY WITH OVER 35 PROJECTS</h5>
 
-                                <p class="card-text w-[29vw] ">Expérimente.<br />
+                                <p class="card-text md:w-[29vw] ">Expérimente.<br />
                                     Recommence.<br />
                                     Apprends de tes échecs.<br />
                                     Recommence.<br />
                                     Atteins le succès.<br />
                                 </p>
-
-
-
                             </div>
                         </div>
                     </div>
                     <div className="  ">
                         <div class="card " >
-                            <div className=" w-[5vw] mx-auto">
+                            <div className=" md:w-[5vw] mx-auto">
                                 <Image src={pc} class="card-img-top " alt="img" />
                             </div>
-                            <div class="card-body cardes">
+                            <div class="card-body cardes ">
                                 <h5 class="card-title md:text-lg text-center font-bold xl:text-[18px] lg:text-[17px]">INSTRUCTOR-LED = NO TIME TO WASTE</h5>
 
-                                <p class="card-text w-[30vw] ">Maximise ton potentiel.<br /> Minimise ton temps perdu.</p>
-
-
-
+                                <p class="card-text md:w-[30vw] ">Maximise ton potentiel.<br /> Minimise ton temps perdu.</p>
                             </div>
                         </div>
                     </div>
                     <div className="  ">
                         <div class="card " >
-                            <div className=" w-[5vw] mx-auto">
+                            <div className=" md:w-[5vw] mx-auto">
                                 <Image src={pc} class="card-img-top " alt="img" />
                             </div>
                             <div class="card-body cardes">
                                 <h5 class="card-title md:text-lg text-center font-bold xl:text-[18px] lg:text-[17px]">INDIVIDUAL CAREER COACHING </h5>
 
-                                <p class="card-text w-[25vw] ">Dévoile ton talent grâce à un accompagnement professionnel personnalisé.</p>
+                                <p class="card-text md:w-[25vw] ">Dévoile ton talent grâce à un accompagnement professionnel personnalisé.</p>
 
 
 
@@ -198,8 +194,7 @@ const Page = () => {
                 </div>
             </section>
             <section className='my-5 section'>
-                <h2 className='  titel md:w-[90vw]  lg:w-[88vw] lg:text-[16px] xl:w-[85vw]  font-bold mx-auto  text-center my-5   px-1 py-2 rounded-lg'>Des formations diplômantes faites par des experts plus que passionnés
-                    pour vous mener au succès professionnel.</h2>
+                <h2 className='  titel '>Des formations diplômantes faites par des experts.</h2>
                 <div className="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-2">
 
                     {
@@ -210,9 +205,9 @@ const Page = () => {
                                     <div className=" xl:w-[4vw] lg:w-[5vw] md:w-[7vw] mt-2 mx-auto">
                                         <Image src={diplioms.img} class="card-img-top h-[6vh]" alt="..." />
                                     </div>
-                                    <div class="card-body h-[20vh] xl:h-[15vw]  text-center flex  flex-col justify-between lg:h-[20vh] md:h-[20vh]">
-                                        <h4 class="card-title text-xl xl:text-[25px]  lg:text-[20px] md:text-[18px]  font-bold">{diplioms.titel}</h4>
-                                        <p class="card-text">{diplioms.text}</p>
+                                    <div class="card-body h-[25vh] xl:h-[15vw] text-center flex flex-col justify-between lg:h-[20vh] md:h-[20vh]">
+                                        <h4 class="card-title text-sm xl:text-[25px] lg:text-[20px] md:text-[18px] font-bold">{diplioms.titel}</h4>
+                                        <p class="card-text md:text-lg text-xs">{diplioms.text}</p>
                                     </div>
                                 </div>
                             </div>
@@ -221,19 +216,16 @@ const Page = () => {
                     }
                 </div>
             </section>
-            <section className=''>
-                <p className="titel xl:w-[81vw] lg:w-[88vw] md:w-[78vw] my-5 w-[87vw]">Partenaires recruteurs<br />Rejoignez les meilleures entreprises tech</p>
-                <p className=' titel md:w-[80vw] lg:w-[88vw] xl:w-[81vw] mx-auto  text-center   sm:px-2 lg:px-1 rounded-lg'>Dès la fin de la formation, notre équipe Carrières vous accompagnera dans votre recherche d'emploi pour trouver le job de vos rêves.</p>
-
-
-                <div id="carouselExampleAutoplaying" className="carousel slide flex     " data-bs-ride="carousel">
+            <section className='section'>
+                <p className="titel ">Partenaires recruteurs, Rejoignez les meilleures entreprises tech</p>
+                <div id="carouselExampleAutoplaying" className="carousel slide flex" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         {slides.map((slide, index) => (
                             <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                                 <div className="flex flex-wrap justify-center">
                                     {slide.map((imgSrc, imgIndex) => (
-                                        <div key={imgIndex} className=" lg:w-[17vw] xl:w-[24vw]  md:mx-3 md:w-[24vw]   my-3 w-[20vw]">
-                                            <img src={imgSrc} className="mx-auto w-full" alt="..." />
+                                        <div key={imgIndex} className="  xl:w-[20vw] lg:w-[17vw] md:mx-3 md:w-[15vw] my-3 mx-1 w-[22vw]">
+                                            <Image src={imgSrc}  width={200} className="mx-auto w-full" alt="..." />
                                         </div>
                                     ))}
                                 </div>
@@ -244,9 +236,9 @@ const Page = () => {
                         <span className="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
                         <span className="visually-hidden">Previous</span>
                     </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                        <span className="carousel-control-next-icon bg-black" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
+                    <button className="carousel-control-next " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span className="carousel-control-next-icon  bg-black" aria-hidden="true"></span>
+                        <span className="visually-hidden ">Next</span>
                     </button>
                 </div>
             </section>
