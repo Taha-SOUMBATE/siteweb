@@ -1,15 +1,22 @@
-import Developweb from "./pages/developweb";
-import Integrateur from "./pages/integrateur";
+import angu from './pictures/angular.png'
+import react from './pictures/react.png'
+import html2 from './pictures/html2.png'
+
 
 export const photo = [
     {
         id: 1,
-        pick: 'https://t4.ftcdn.net/jpg/02/95/03/85/240_F_295038583_mn0uxJ6A0YO57HA4xXQqHFUjiW1BcqBE.jpg',
+        pick: angu,
 
     },
     {
         id: 2,
-        pick: 'https://t4.ftcdn.net/jpg/05/96/94/01/240_F_596940156_YFToVfFX9yzMPKPTtOLhDniGGdCqHXI4.jpg',
+        pick: react,
+
+    },
+    {
+        id: 3,
+        pick: html2,
 
     },
 
@@ -127,6 +134,10 @@ export const parcour = [
     },
 ];
 import first from "./pictures/gagnant.png"
+import  professionnels from "./pictures/homme-daffaire.png"
+import  certification from "./pictures/certification.png"
+import  gratuitement from "./pictures/livraison-gratuite.png"
+
 
 
 export const dipliom = [
@@ -138,19 +149,19 @@ export const dipliom = [
     },
     {
         id: 2,
-        img: first,
+        img: professionnels,
         titel: "Enseignées par des professionnels",
         text: "qui partagent plus qu'une passion !"
     },
     {
         id: 3,
-        img: first,
+        img: certification,
         titel: "Certifiées et reconnues",
         text: "par l'état, le secteur et les entreprises"
     },
     {
         id: 4,
-        img: first,
+        img: gratuitement,
         titel: "Testez nos cours gratuitement",
         text: "depuis chez vous et dès maintenant !"
     },
@@ -225,33 +236,37 @@ export const hero = [
   },
 ];
 
+import event from './pictures/event.jpg'
+import school from './pictures/school.jpg'
+import click from './pictures/click.jpg'
+
 export const news = [
     {
-        pick: testphoto,
-        titel:"blog",
-        subtitel:"b1",
-        info:"b1 ",
+        pick: event,
+        titel:"blog 1",
+        subtitel:`Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble ...`,
+        info:`Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…)1. Un texte n'a pas de longueur déterminée sauf dans le cas de poèmes à forme fixe comme le sonnet ou le haïku.
+
+        L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.`,
 
     },
     {
-        pick: testphoto,
-        titel:"blog",
-        subtitel:"b2",
-        info:"b2",
+        pick: school,
+        titel:"blog 2",
+        subtitel:`Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble ...`,
+        info:`Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…)1. Un texte n'a pas de longueur déterminée sauf dans le cas de poèmes à forme fixe comme le sonnet ou le haïku.
+
+        L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.`,
 
     },
     {
-        pick: testphoto,
-        titel:"blog",
-        subtitel:"b3",
-        info:"b3",
+        pick: click,
+        titel:"blog 3",
+        subtitel:`Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble ...`,
+        info:`Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…)1. Un texte n'a pas de longueur déterminée sauf dans le cas de poèmes à forme fixe comme le sonnet ou le haïku.
+
+        L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.`,
 
     },
-    {
-        pick: testphoto,
-        titel:"blog",
-        subtitel:"b4",
-        info:"b4",
-
-    },
+   
 ]

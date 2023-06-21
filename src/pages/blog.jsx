@@ -69,8 +69,8 @@ const Blog = () => {
                     news.map((newss, index) => (
                         
 
-                            <div className="card  xl:w-[20vw]  pt-4 text-center  relative" key={index}>
-                                <Image className='mx-auto' src={newss.pick} height={100} />
+                            <div className="card  xl:w-[20vw]  p-1 text-center  relative" key={index}>
+                                <Image className='mx-auto h-[20vh]' src={newss.pick}  />
                                 <h2>{newss.titel} </h2>
                                 <p>{newss.subtitel} </p>
                                 <div className="content">
