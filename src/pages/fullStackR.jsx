@@ -20,122 +20,130 @@ export default function FullStackR() {
 
             <section className='text-center  border-2 mx-5 my-5 rounded-xl shadow-gray-100 shadow-xl'>
 
-                <h2>Formation Developpeur web Fullstack - JavaScript</h2>
+                <h2>Formation développeur web </h2>
                 <div className=''>
                     <div className='mx-[13vw] '>
 
-                        <h5>Acquérir et approfondir des compétences en savoir-faire, savoir-être et savoir-technologiques</h5>
-                        <p>Apprenez les langages fondamentaux du développement Wordpress, HTML, CSS, SQL, JavaScript, PHP, React/React Native,jQuery,Bootstrap,PWA,Git,Express</p>
+                        <h5>Maîtrisez les compétences fondamentales d'un.e Développeur.se Web en quelques semaines</h5>
+                        <p>Vous apprendrez à travers 6 modules : soit à temps plein pendant 2 mois, soit à temps partiel pendant 6 mois (400 heures de formation).</p>
                     </div>
-                    <div className=' '>
-                        <div className='flex justify-evenly lg:flex-row  md:flex-col '>
-                            <div className=''>
-                                <p className='border border-indigo-600 p-2 '>3 mois 400h</p>
-                            </div>
-                            <div className=''>
-                                <p className='border border-indigo-600 p-2'>Formation ouverte a tout public, sans prérequis de diplome.</p>
-                            </div>
-                            <div className=''>
-                                <p className='border border-indigo-600 p-2'>en telepresentiel Temps plein</p>
-                            </div>
-                        </div>
 
-                    </div>
                 </div>
 
 
 
-                <div className="lg:w-[80vw] md:w-[vw] rounded-lg  mb-5 bg-slate-300 mx-auto">
-                    <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+                <div className="lg:w-[80vw] md:w-[vw] rounded-lg  mb-5 bg-orange-50 mx-auto">
+                    <Tab.Container id="left-tabs-example" defaultActiveKey="1">
                         <Row>
                             <Col sm={3}>
-                                <Nav variant="pills" className="flex-column">
+                                <Nav variant="pills" className="flex-column ">
                                     <Nav.Item >
-                                        <Nav.Link eventKey="first" >Module 1</Nav.Link>
+                                        <Nav.Link eventKey="0" className="navlink">Prepwork</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item >
+                                        <Nav.Link eventKey="1" className="navlink">Module 1</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="second">Module 2</Nav.Link>
+                                        <Nav.Link eventKey="2" className="navlink">Module 2</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="3">Module 3</Nav.Link>
+                                        <Nav.Link eventKey="3" className="navlink">Module 3</Nav.Link>
                                     </Nav.Item>
                                 </Nav>
                             </Col>
                             <Col sm={9}>
-                                <Tab.Content>
-                                    <Tab.Pane eventKey="first">
-                                        <h1 className='text-lg text-center'>Développement Frontend – 40 jours</h1>
+                                <Tab.Content  className='h-[22vh]'>
+                                    <Tab.Pane eventKey="0">
+
                                         <div className='flex  lg:justify-around lg:text-lg md:text-sm md:text-left md:justify-center'>
-                                            <ul>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                            </ul>
-                                            <ul>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                            </ul>
+                                            <div className=''>
+                                                <p>Prepwork : préparez-vous à la formation<span className='text-gray-500'>  40h</span></p>
+
+                                                <ul style={{ listStyleType: 'circle' }}>
+                                                    <li> Web 101, comment fonctionne le web</li>
+                                                    <li> Les commandes basiques du terminal et de Git</li>
+                                                    <li> Les fondamentaux de HTML, CSS et JavaScript</li>
+                                                    <li> Les workflows tech et outils des startups</li>
+                                                </ul>
+
+                                            </div>
+                                            <div>
+                                                <p>Ce que l’on attend de vous :</p>
+                                                <ul style={{ listStyleType: 'disc' }}>
+                                                    <li> 40h de travail préparatoire en ligne</li>
+                                                    <li> Validation des fondamentaux du web via un quiz en ligne</li>
+
+                                                </ul>
+                                            </div>
                                         </div>
                                     </Tab.Pane>
-                                    <Tab.Pane eventKey="second">
-                                        <h1 className='text-xl text-center'>Développement Backend – 12 jours</h1>
+                                    <Tab.Pane eventKey="1">
                                         <div className='flex  lg:justify-around lg:text-lg md:text-sm md:text-left md:justify-center'>
-                                            <ul>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                            </ul>
-                                            <ul>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                            </ul>
+                                            <div className='w-[30vw]'>
+                                                <p>Fondamentaux : codez vos premiers programmes<span className='text-gray-500'> 56h</span></p>
+
+                                                <ul style={{ listStyleType: 'circle' }}>
+                                                    <li> Outils du développeur</li>
+                                                    <li> Bases de la programmation (variables, boucles, fonctions, structures de données)</li>
+                                                    <li> Lecture/écriture à partir de fichiers (CSV, JSON, etc.)</li>
+                                                    <li> Extraction de données via web scraping ou APIs</li>
+                                                </ul>
+
+                                            </div>
+                                            <div>
+                                                <p>Ce que vous allez réaliser en pratique</p>
+                                                <ul style={{ listStyleType: 'disc' }}>
+                                                    <li> Des scripts qui détectent les emails et les numéros de téléphone valides</li>
+                                                    <li> Collecter de la donnée via le web scraping</li>
+                                                    <li> Apprivoiser votre ligne de commande</li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="2">
+                                        <div className='flex  lg:justify-around lg:text-lg md:text-sm md:text-left md:justify-center'>
+                                            <div className='w-[30vw]'>
+                                                <p>Architecture logicielle : créez vos premières applications<span className='text-gray-500'> 48h</span></p>
+
+                                                <ul style={{ listStyleType: 'circle' }}>
+                                                    <li> Modèles de conception de logiciels (MVC)</li>
+                                                    <li> Écriture d'un code robuste et facile à maintenir</li>
+                                                    
+                                                </ul>
+
+                                            </div>
+                                            <div>
+                                                <p>Ce que vous allez réaliser en pratique</p>
+                                                <ul style={{ listStyleType: 'disc' }}>
+                                                    <li> Logiciel MVC de A à Z</li>
+                                                    <li> Une application de livraison de repas dans votre terminal</li>
+
+                                                </ul>
+                                            </div>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="3">
-                                        <h1 className='text-xl text-center'>Gestion de Projet – 30 jours</h1>
                                         <div className='flex  lg:justify-around lg:text-lg md:text-sm md:text-left md:justify-center'>
-                                            <ul>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                            </ul>
-                                            <ul>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                                <li>Généralités, typographie et texte</li>
-                                            </ul>
+                                            <div className='w-[30vw]'>
+                                                <p>Base de données et SQL : stocker et extraire des données<span className='text-gray-500'> 32h</span></p>
+
+                                                <ul style={{ listStyleType: 'circle' }}>
+                                                    <li> Bases de données relationnelles</li>
+                                                    <li> SQL (CRUD, JOIN)</li>
+                                                    
+                                                    <li> Utiliser un ORM (Active Record)</li>
+                                                </ul>
+
+                                            </div>
+                                            <div>
+                                                <p>Ce que vous allez réaliser en pratique</p>
+                                                <ul style={{ listStyleType: 'disc' }}>
+                                                    <li>Une app de blogging simple avec une database</li>
+                                                    <li>Des scripts pour extraire de la data depuis une base de données de musique</li>
+
+                                                </ul>
+                                            </div>
                                         </div>
                                     </Tab.Pane>
                                 </Tab.Content>

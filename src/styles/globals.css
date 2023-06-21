@@ -17,6 +17,9 @@
   .hero{
     @apply xl:w-[20vw] xl:text-[20px] font-light
   }
+  .text{
+    @apply 2xl:text-lg xl:text-base md:text-[16px] text-[13px]
+  }
   
   
 }
@@ -108,3 +111,17 @@ opacity: 0;
   width: 70%;
   background-color: black;
 }
+
+.navlink{
+  position: relative;
+  z-index: 1;
+ background-color: transparent!important;
+ color: #F73F03!important;  
+ }
+
+ .navlink:focus{
+  position: relative;
+  z-index: 1;
+  color: #fff!important; 
+   background-color: #F73F03!important;
+ }

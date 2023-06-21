@@ -21,44 +21,71 @@ export const card = [
         id: 1,
         img: "https://dummyimage.com/300/300/fff",
         title: "développeur web junior",
-        dsck: "Acquérir les 5 langages et technologies pour devenir développeur web",
+        dsck: "Apprenez à coder avec notre formation en Développement Web",
         btne: "développeur web ",
         lin: "./developweb"
     },
 
     {
-        id: 2,
+        id: 3,
         img: "https://dummyimage.com/300/300/fff",
-        title: "Intégrateur Web",
-        dsck: "Vous spécialiser sur des technologies et des frameworks actuels",
-        btne: "Développeur Confirmé",
-        lin: "./integrateur"
+        title: "Data Science ",
+        dsck: "Changez de carrière avec notre programme en Data Science",
+        btne: "Développeur Expert",
+        lin: "./developweb"
     },
+    {
+        id: 1,
+        img: "https://dummyimage.com/300/300/fff",
+        title: "Data Analytics",
+        dsck: "Changez de carrière avec notre programme en Data Analytics",
+        btne: "développeur web ",
+        lin: "./developweb"
+    },
+
     {
         id: 3,
         img: "https://dummyimage.com/300/300/fff",
         title: "web Fullstack ",
         dsck: "Devenez expert en IA ou en cybersécurité",
         btne: "Développeur Expert",
-        lin: "./fullStackR"
+        lin: "./developweb"
     },
     {
-        id: 4,
+        id: 1,
         img: "https://dummyimage.com/300/300/fff",
-        title: "web Fullstack ",
-        dsck: "Devenez expert en IA ou en cybersécurité",
-        btne: "Développeur Expert",
-        lin: "./fullStackR"
-    },
-    {
-        id: 5,
-        img: "https://dummyimage.com/300/300/fff",
-        title: "web Fullstack ",
-        dsck: "Devenez expert en IA ou en cybersécurité",
-        btne: "Développeur Expert",
-        lin: "./fullStackR"
+        title: "développeur web junior",
+        dsck: "Acquérir les 5 langages et technologies pour devenir développeur web",
+        btne: "développeur web ",
+        lin: "./developweb"
     },
 
+    {
+        id: 3,
+        img: "https://dummyimage.com/300/300/fff",
+        title: "web Fullstack ",
+        dsck: "Devenez expert en IA ou en cybersécurité",
+        btne: "Développeur Expert",
+        lin: "./developweb"
+    },
+    {
+        id: 1,
+        img: "https://dummyimage.com/300/300/fff",
+        title: "développeur web junior",
+        dsck: "Acquérir les 5 langages et technologies pour devenir développeur web",
+        btne: "développeur web ",
+        lin: "./developweb"
+    },
+
+    {
+        id: 3,
+        img: "https://dummyimage.com/300/300/fff",
+        title: "web Fullstack ",
+        dsck: "Devenez expert en IA ou en cybersécurité",
+        btne: "Développeur Expert",
+        lin: "./developweb"
+    },
+ 
 
 
 ];
@@ -142,26 +169,28 @@ export const dipliom = [
 ];
 
 import logo from './pictures/wa.png'
+import amz from './pictures/Amazon-logo.png'
+import gogo from './pictures/Google_2011_logo.png'
 
 export const slides = [
     [
         logo,
-        logo,
-        logo,
+        amz,
+        gogo,
 
 
     ],
     [
         logo,
-        logo,
-        logo,
+        amz,
+        gogo,
 
 
     ],
     [
         logo,
-        logo,
-        logo,
+        amz,
+        gogo,
 
 
     ],

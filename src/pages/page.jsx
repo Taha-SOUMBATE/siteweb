@@ -1,6 +1,9 @@
 import { dipliom, photo, slides } from '@/Info';
 import React from 'react';
 import pc from '../pictures/pc.png'
+import html from '../pictures/html.png'
+import clock from '../pictures/clock.png'
+import hand from '../pictures/hand-shake.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link';
 
@@ -150,7 +153,7 @@ const Page = () => {
                     <div className="  ">
                         <div class="card " >
                             <div className=" md:w-[5vw] mx-auto">
-                                <Image src={pc} class="card-img-top " alt="img" />
+                                <Image src={html} class="card-img-top " alt="img" />
                             </div>
                             <div class="card-body cardes ">
                                 <h5 class="card-title md:text-lg text-center  font-bold xl:text-[18px] lg:text-[17px]">A LEARNING JOURNEY WITH OVER 35 PROJECTS</h5>
@@ -166,8 +169,8 @@ const Page = () => {
                     </div>
                     <div className="  ">
                         <div class="card " >
-                            <div className=" md:w-[5vw] mx-auto">
-                                <Image src={pc} class="card-img-top " alt="img" />
+                            <div className=" md:w-[5vw] mt-1 mx-auto">
+                                <Image src={clock} class="card-img-top " alt="img" />
                             </div>
                             <div class="card-body cardes ">
                                 <h5 class="card-title md:text-lg text-center font-bold xl:text-[18px] lg:text-[17px]">INSTRUCTOR-LED = NO TIME TO WASTE</h5>
@@ -179,7 +182,7 @@ const Page = () => {
                     <div className="  ">
                         <div class="card " >
                             <div className=" md:w-[5vw] mx-auto">
-                                <Image src={pc} class="card-img-top " alt="img" />
+                                <Image src={hand} class="card-img-top " alt="img" />
                             </div>
                             <div class="card-body cardes">
                                 <h5 class="card-title md:text-lg text-center font-bold xl:text-[18px] lg:text-[17px]">INDIVIDUAL CAREER COACHING </h5>
