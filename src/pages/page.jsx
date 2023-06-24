@@ -18,7 +18,7 @@ const Page = () => {
 
             <section className="my-5  section">
                 <div className="justify-between flex md:flex-row items-center md:items-start px-2  md:px-0 md: lg:px-0  ">
-                    <div className=" text-start w-[50vw] static md:w-[45vw] ">
+                    <div className=" text-start w-[40vw] static md:w-[45vw] ">
                         <h2 className='xl:text-2xl lg:text-xl md:text-lg text-sm'>Accélérez votre carrière, formez-vous aux<br /></h2>
                         <h2 className="bg-[#F73F03]  text-white xl:w-[20vw] lg:w-[24vw] md:w-[31vw] md:text-[27px] text-[18px] w-[83%] md:px-2 md:py-3 px-1 py-2 rounded-lg">métiers de la Tech</h2>
                         <p className="md:text-base  text-xs">Accédez à de nouvelles opportunités grâce à nos formations immersives en développement web et en data.</p>
@@ -26,11 +26,11 @@ const Page = () => {
                         <p className="md:text-base xl:mb-20  text-xs">Accédez à de nouvelles opportunités grâce à nos formations immersives en développement web et en data.</p>
                         <Link href={'#form'} className="rounded-md no-underline bg-[#F73F03] py-2 px-3  text-white">rejoignez nous</Link>
                     </div>
-                    <div id="carouselExampleRide" class="carousel slide md:w-[30vw] w-[10vw]" data-bs-ride="true">
+                    <div id="carouselExampleRide" class="carousel slide md:w-[30vw] w-[40vw]" data-bs-ride="true">
                         <div class="carousel-inner">
                             {photo.map((photos, index) => (
                                 <div key={photos.id} className={`carousel-item  ${index === 0 ? 'active' : ''}`}>
-                                    <Image src={photos.pick} height={360} className="" alt="" />
+                                    <Image src={photos.pick}  className="" alt="" />
                                 </div>
                             ))}
                         </div>
