@@ -26,7 +26,7 @@ const Page = () => {
                         <p className="md:text-base xl:mb-20  text-xs">Accédez à de nouvelles opportunités grâce à nos formations immersives en développement web et en data.</p>
                         <Link href={'#form'} className="rounded-md no-underline bg-[#F73F03] py-2 px-3  text-white">rejoignez nous</Link>
                     </div>
-                    <div id="carouselExampleRide" class="carousel slide md:w-[30vw] w-[40vw]" data-bs-ride="true">
+                    <div id="carouselExampleRide" class="carousel slide xl:w-[25vw] md:w-[30vw] w-[40vw]" data-bs-ride="true">
                         <div class="carousel-inner">
                             {photo.map((photos, index) => (
                                 <div key={photos.id} className={`carousel-item  ${index === 0 ? 'active' : ''}`}>
