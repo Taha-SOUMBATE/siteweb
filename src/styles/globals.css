@@ -12,7 +12,7 @@
     @apply text-center text-white  xl:text-[22px] lg:text-[20px] font-bold md:text-[15px] text-sm bg-[#F73F03]  mx-auto py-2 px-1 rounded-lg;
   }
   .cardes {
-    @apply md:h-[38vh] lg:h-[34vh] xl:h-[30vh] h-[40vh] flex flex-col justify-between;
+    @apply  md:h-[38vh] lg:h-[34vh] xl:h-[30vh] h-[40vh] flex flex-col justify-between;
   }
   .hero{
     @apply xl:w-[20vw] xl:text-[20px] font-light

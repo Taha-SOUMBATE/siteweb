@@ -187,7 +187,7 @@ const Page = () => {
                             <div class="card-body cardes">
                                 <h5 class="card-title md:text-lg text-center font-bold xl:text-[18px] lg:text-[17px]">INDIVIDUAL CAREER COACHING </h5>
 
-                                <p class="card-text md:w-[25vw] ">Dévoile ton talent grâce à un accompagnement professionnel personnalisé.</p>
+                                <p class="card-text md:w-[25vw] ">Dévoile ton talent grâce à un <br /> accompagnement professionnel <br /> personnalisé.</p>
 
 
 
